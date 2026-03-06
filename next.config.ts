@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
-// Enable calling `getCloudflareContext()` in `next dev`.
-// See https://opennext.js.org/cloudflare/bindings#local-access-to-bindings.
-import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
-initOpenNextCloudflareForDev();
+// Cloudflare开发模式需要Wrangler权限，在受限环境中注释掉以下代码
+// 如需使用Cloudflare功能，请确保有适当的权限配置
+// import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+// initOpenNextCloudflareForDev();
